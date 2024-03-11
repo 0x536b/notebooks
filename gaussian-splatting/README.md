@@ -174,6 +174,10 @@ The colors for each gaussian is view dependent. So the camera position is need t
 - [FOV Pic](https://www.arducam.com/focal-length-calculator/)
 
 ## Scratchpad (Ignore. For self notes and todos)
+### Todos
+- [ ] Add titles to the notebooks
+- [ ] Parallelize
+- [ ] Create notebooks for official implementation and other implementation
 
 ### Commands used
 ```bash
