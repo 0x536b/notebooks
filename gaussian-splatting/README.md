@@ -178,6 +178,7 @@ The colors for each gaussian is view dependent. So the camera position is need t
 - [ ] Add titles to the notebooks
 - [ ] Parallelize
 - [ ] Create notebooks for official implementation and other implementation
+- [ ] Test notebooks on macos with apple silicon (on MPS) 
 
 ### Commands used
 ```bash
