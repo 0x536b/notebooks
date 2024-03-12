@@ -1,5 +1,7 @@
 # Breaking down Gaussian Splatting (Rending only) piece by piece
 
+[Not complete!]
+
 I wrote this article as I was restarting my research on gaussian splatting. I wanted to document everything I did from scratch. You can always skip to the sessions you are interested in.
 
 ## My Setup
