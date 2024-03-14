@@ -1,5 +1,15 @@
 # AirSim Notes
 
+## Hardware-in-the-loop simulation
+### Hardware description
+- Using the components from NXP's Game of drones kit.
+- Flight Controller - [NXP FMU](https://nxp.gitbook.io/hovergames/userguide/getting-started/drone-kit-contents#nxp-rddrone-fmuk66-with-enclosure-and-microsd-card)
+- Remote Controller - FlySky FS-i6S RC
+### Setup
+- Just follow the steps found in the official doc for the NXP FMU. Its pretty straight forward if you have ubuntu machine or a windows machine. But its easy to figure out.
+- https://nxp.gitbook.io/hovergames/downloads#flysky-i-6-s-radio-controller-firmware-updater
+- Flash the official firmware, by choosing "custom firmware" option on the QGround control.
+
 ## Build/Install on macOS with Apple Silicon
 - My laptop
   - Macbook Pro, 16-inch, 2023
@@ -40,3 +50,24 @@ open Blocks.xcworkspace/
 
 # it will be laggy when you open someother windows to run python scripts. Go to prefernce -> untick "Use less CPU when in bg" option. That will smooth things out.
 ```
+
+
+## Pytorch
+- wheels for nvidia pytorch - [Link](https://developer.download.nvidia.com/compute/redist/jp/)
+- Install Jetpack
+- Go to the link
+- I downloaded - https://developer.download.nvidia.com/compute/redist/jp/v60dp/pytorch/torch-2.2.0a0+6a974be.nv23.11-cp310-cp310-linux_aarch64.whl
+- Then follow steps from here - [Nvidia tutorial](https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html#prereqs-install)
+
+```bash
+sudo apt install virtualenv
+python -m virtualenv <name>
+source <name>/bin/activate
+wget https://developer.download.nvidia.com/compute/redist/jp/v60dp/pytorch/torch-2.2.0a0+6a974be.nv23.11-cp310-cp310-linux_aarch64.whl
+export $TORCH_INSTALL=<path>/torch-2.2.0a0+6a974be.nv23.11-cp310-cp310-linux_aarch64.whl
+pip install --no-caceh $TORCH_INSTALL
+pip install 
+```
+- export TORCH_INSTALL=path/to/torch-<version>.whl
+- pip install --no-cahce $TORCH_INSTALL
+- 
